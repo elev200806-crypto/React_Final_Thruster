@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+.card{
+  background-color: black;
+  color:white;
+  border-radius: 45px;
+  margin: 24px;
+  padding: 34px;
+
+}
+
+
+.navbar{
+  background-color: black;
+  color: white;
+  font-size: larger;
+  padding: 23px;
+  margin-bottom: 20px;
+
+}
