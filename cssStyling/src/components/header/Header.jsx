@@ -1,14 +1,14 @@
 import React from "react";
-import '../styles/Header.css'
+import styles from './Header.module.css'
 
 const Header = ()=>{
     return(
-        <div className="header">
+        <div className={styles.header}>
             <h3>Lakshya Gaur</h3>
             <button>Log In</button>
         </div>
 
-    )
+    ) 
 
 }
 
