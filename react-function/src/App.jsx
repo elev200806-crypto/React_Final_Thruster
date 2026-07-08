@@ -2,23 +2,24 @@ import React from "react"
 
 const App = () => {
 
-  // const btnClicked = () => {
-  //   console.log("Button is Clicked!")
+  const inputChanging = ()=>{
+    console.log("Input")
 
-  // }
-
+  }
 
 
   return (
     <div>
-      <h1>Hi, Lakshya</h1>
-      <button onClick={function(){
-        console.log("This is In-Function Operation in React.JS")
+       {/* here you can not call function */ */}
+      {/* <input onChange={inputChanging} type="text" placeholder="Enter name"  /> */}
 
-      }}>Change User</button>
-      
-      {/* <button onClick={btnClicked}>Change User</button>
-      <button onClick={btnClicked}>Change User</button> */}
+
+{/* here you can create a direct function inside the curly brackets and can either call a function or not... */}
+
+      <input onChange={function(){
+        inputChanging()
+
+      }} type="text" placeholder="Enter name"  />
 
     </div>
 

@@ -15,7 +15,9 @@ body{
 }
 
 
-button{
-  margin-right: 45px;
+input{
+  margin: 45px;
+  padding: 20px 40px;
+
 
 }
