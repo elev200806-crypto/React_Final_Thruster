@@ -2,26 +2,44 @@ import React from "react"
 
 const App = () => {
 
-  const inputChanging = ()=>{
-    console.log("Input")
+  const onScrolling = (elem){
+    if(elem>0){
+      console.log("Seedha Scroll kar raha hai lala!")
+
+    }else{
+      console.log("Ulta Scroll kar raha hai Mera Babu")
+
+    }
 
   }
 
-
   return (
-    <div>
-       {/* here you can not call function */ */}
-      {/* <input onChange={inputChanging} type="text" placeholder="Enter name"  /> */}
 
+    <div onWheel={(elem)=>{
+      onScrolling(elem.deltaY)
 
-{/* here you can create a direct function inside the curly brackets and can either call a function or not... */}
-
-      <input onChange={function(){
-        inputChanging()
-
-      }} type="text" placeholder="Enter name"  />
+    }}>
+      <div className="page1"></div>
+      <div className="page2"></div>
+      <div className="page3"></div>
 
     </div>
+
+
+
+
+
+
+
+
+
+    // <div>
+    //   <div onMouseMove={(elem)=>{
+    //     console.log("Mouse is moving... : ",elem.clientX, elem.clientY)
+
+    //   }} className="box"></div>
+
+    // </div>
 
   )
 
