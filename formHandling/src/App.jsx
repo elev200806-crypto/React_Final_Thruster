@@ -1,29 +1,29 @@
 import React from "react";
 
-const App = ()=>{
+const App = () => {
 
-  // form handling
+    // form handling
 
-  const submitForm = (e)=>{
-    e.preventDefault()
-    console.log("Form Submitted")
+    const submitForm = (e) => {
+        e.preventDefault()
+        console.log("Form Submitted")
 
-  }
+    }
 
 
-  return(
-    <div>
-      <form onSubmit={(a)=>{
-          submitForm(a)
+    return (
+        <div>
+            <form onSubmit={(a) => {
+                submitForm(a)
 
-        }}>
-        <input type="text" placeholder="Enter your name" />
-        <button>Submit</button>
-        
-      </form>
-    </div>
+            }}>
+                <input type="text" placeholder="Enter your name" />
+                <button>Submit</button>
 
-  )
+            </form>
+        </div>
+
+    )
 
 
 }
