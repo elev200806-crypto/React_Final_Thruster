@@ -3,6 +3,9 @@ import {BrowserRouter as Router, Routes,Route} from "react-router-dom"
 import Home from "../../reactRouterDOM/src/pages/home";
 import About from "../../reactRouterDOM/src/pages/about";
 import Contact from "../../reactRouterDOM/src/pages/contact";
+import Navbar from "./components/Navbar";
+
+
 
 const App = ()=>{
 
@@ -11,6 +14,7 @@ const App = ()=>{
     <>
       
       <Router>
+          <Navbar/>
         <Routes>
             <Route path="/home" element={<Home/>} />
             <Route path="/abouts" element={<About/>}/>
