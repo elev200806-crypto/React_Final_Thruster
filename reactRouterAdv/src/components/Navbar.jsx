@@ -12,6 +12,8 @@ const Navbar = ()=>{
             })}to={"/home"}>Home</NavLink>
             <Link to={"/abouts"}>About</Link>
             <Link to={"/contacts"}>Contact</Link>
+            <Link to={"/user/"}>User</Link>
+            
         </>
 
     )

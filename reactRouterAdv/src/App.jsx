@@ -4,6 +4,8 @@ import Home from "../../reactRouterDOM/src/pages/home";
 import About from "../../reactRouterDOM/src/pages/about";
 import Contact from "../../reactRouterDOM/src/pages/contact";
 import Navbar from "./components/Navbar";
+import User from "./pages/user";
+import Dynamic from "./pages/Dynamic";
 
 
 
@@ -38,6 +40,8 @@ const App = ()=>{
             <Route path="/home" element={<Home/>} />
             <Route path="/abouts" element={<About/>}/>
             <Route path="/contacts" element={<Contact/>}/>
+            <Route path="/user" element={<User/>}/>
+            <Route path="/user/:id" element={<Dynamic/>}/>
 
         </Routes>
 
