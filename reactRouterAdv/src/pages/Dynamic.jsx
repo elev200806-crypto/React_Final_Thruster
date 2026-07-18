@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
 
@@ -19,6 +19,7 @@ const Dynamic = ()=>{
     // console.log(useLocation())
 
     const location = useLocation(   )
+    const navi = useNavigate()
 
     return(
         <>
@@ -32,6 +33,10 @@ const Dynamic = ()=>{
                 <h1>Radhe Radhe, {spec.name}</h1>
 
             </div> ) }
+
+            <div>
+                <button onClick={()=> navi("/home") }>Go to Home</button>
+            </div>
         </>
 
     )
